@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SCO306 - AI Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="WordCalculator.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        padding: 60px 80px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        animation: fadeIn 1.5s ease;
+      }
+
+      h1 {
+        font-size: 4rem;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        background: linear-gradient(90deg, #00f2fe, #4facfe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: #e0e0e0;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #b0c7d6;
+        letter-spacing: 2px;
+      }
+
+      .glow {
+        margin-top: 30px;
+        width: 120px;
+        height: 4px;
+        background: linear-gradient(90deg, #00f2fe, #4facfe);
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        animation: glow 2s infinite alternate;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes glow {
+        from {
+          box-shadow: 0 0 10px #00f2fe;
+        }
+        to {
+          box-shadow: 0 0 25px #4facfe;
+        }
+      }
+
+      /* Floating particles */
+      .bubble {
+        position: absolute;
+        bottom: -100px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        animation: rise 15s infinite linear;
+      }
+
+      @keyframes rise {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-120vh);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Floating background bubbles -->
+    <div
+      class="bubble"
+      style="width: 40px; height: 40px; left: 10%; animation-duration: 12s"
+    ></div>
+    <div
+      class="bubble"
+      style="width: 20px; height: 20px; left: 30%; animation-duration: 18s"
+    ></div>
+    <div
+      class="bubble"
+      style="width: 60px; height: 60px; left: 50%; animation-duration: 20s"
+    ></div>
+    <div
+      class="bubble"
+      style="width: 25px; height: 25px; left: 70%; animation-duration: 14s"
+    ></div>
+    <div
+      class="bubble"
+      style="width: 35px; height: 35px; left: 85%; animation-duration: 16s"
+    ></div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <h1>SCO306</h1>
+      <h2>Programming Languages</h2>
+      <h3>AI Assignment</h3>
+      <div class="glow"></div>
+    </div>
+  </body>
+</html>
