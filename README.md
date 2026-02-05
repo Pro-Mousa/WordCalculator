@@ -1,8 +1,4 @@
-<!-- ===================== HEADER BANNER ===================== -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:4facfe,100:00f2fe&section=header&text=MathLang&fontSize=55&fontColor=ffffff&desc=Tiny%20Word-Based%20Programming%20Language&descSize=22&descAlignY=65" />
-</p>
-
+<h1 align="center">MathLang</h1>
 <p align="center">
   <b>🧠 A Tiny Programming Language Powered by Words</b><br>
   <i>"Because code doesn't always need symbols."</i>
@@ -10,7 +6,7 @@
 
 ---
 
-<h2 style="color:#4facfe;">📘 Overview</h2>
+<h2>📘 Overview</h2>
 
 <p>
 <b>MathLang</b> is a simple experimental programming language that performs basic arithmetic
@@ -33,7 +29,7 @@ This project was developed as part of the <b>SCO306 – Programming Languages AI
 
 ---
 
-<h2 style="color:#00f2fe;">✨ Features</h2>
+<h2>✨ Features</h2>
 
 <h3>Word-based arithmetic operations</h3>
 <ul>
@@ -62,7 +58,7 @@ add 5 and four
 
 ---
 
-<h2 style="color:#38bdf8;">📂 Project Structure</h2>
+<h2>📂 Project Structure</h2>
 
 <pre>
 /MathLang
@@ -74,7 +70,7 @@ add 5 and four
 
 ---
 
-<h2 style="color:#a78bfa;">📐 Grammar (BNF)</h2>
+<h2>📐 Grammar (BNF)</h2>
 
 <pre>
 &lt;expression&gt; ::= &lt;operation&gt; &lt;number&gt; "and" &lt;number&gt;
@@ -89,7 +85,7 @@ add four and five
 
 ---
 
-<h2 style="color:#facc15;">🧩 Part 1 – Basic Interpreter</h2>
+<h2>🧩 Part 1 – Basic Interpreter</h2>
 
 <pre>
 execute("add five and four"); // returns 9
@@ -104,7 +100,7 @@ execute("add five and four"); // returns 9
 
 ---
 
-<h2 style="color:#fb923c;">🤖 Part 2 – AI-Assisted Interpreter</h2>
+<h2>🤖 Part 2 – AI-Assisted Interpreter</h2>
 
 <pre>
 const calculator = new WordCalculator();
@@ -119,7 +115,7 @@ calculator.execute("add four and five"); // returns "nine"
 
 ---
 
-<h2 style="color:#4ade80;">▶️ Running the Project</h2>
+<h2>▶️ Running the Project</h2>
 
 <h3>In Browser</h3>
 <ol>
@@ -135,7 +131,7 @@ node WordCalculator.js
 
 ---
 
-<h2 style="color:#22d3ee;">📊 Example Output</h2>
+<h2>📊 Example Output</h2>
 
 <pre>
 /////////////// MATH LANG ////////////////
@@ -156,7 +152,7 @@ divide four and zero = Cannot divide by zero
 
 ---
 
-<h2 style="color:#c084fc;">🎓 What I Learned</h2>
+<h2>🎓 What I Learned</h2>
 
 <ul>
   <li>Programming languages are built on grammar and interpretation</li>
@@ -166,7 +162,7 @@ divide four and zero = Cannot divide by zero
 
 ---
 
-<h2 style="color:#f472b6;">🚀 Future Improvements</h2>
+<h2>🚀 Future Improvements</h2>
 
 <ul>
   <li>Support larger numbers (thirty, forty, hundred)</li>
@@ -181,7 +177,7 @@ add five and multiply three and two
 
 ---
 
-<h2 style="color:#10b981;">📜 License</h2>
+<h2>📜 License</h2>
 
 <p>
 Educational use only.<br>
@@ -190,16 +186,11 @@ Free to modify and extend.
 
 ---
 
-<h2 style="color:#60a5fa;">👤 Author</h2>
+<h2>👤 Author</h2>
 
 <p>
 <b>SCO306 – Programming Languages</b><br>
 AI Assisted Language Design Assignment<br>
 <b>@MousaCode</b><br>
 2026
-</p>
-
-<!-- ===================== FOOTER ===================== -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:4facfe,100:00f2fe&section=footer" />
 </p>
