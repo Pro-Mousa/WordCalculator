@@ -1,107 +1,143 @@
-MathLang – A Tiny Word-Based Programming Language
-Overview
+<!-- ===================== HEADER BANNER ===================== -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:4facfe,100:00f2fe&section=header&text=MathLang&fontSize=55&fontColor=ffffff&desc=Tiny%20Word-Based%20Programming%20Language&descSize=22&descAlignY=65" />
+</p>
 
-MathLang is a simple experimental programming language that performs basic arithmetic operations using natural language expressions such as:
+<p align="center">
+  <b>🧠 A Tiny Programming Language Powered by Words</b><br>
+  <i>"Because code doesn't always need symbols."</i>
+</p>
 
-add five and four
+---
+
+<h2 style="color:#4facfe;">📘 Overview</h2>
+
+<p>
+<b>MathLang</b> is a simple experimental programming language that performs basic arithmetic
+operations using natural language expressions such as:
+</p>
+
+<pre>
+add five and four  
 divide twenty and four
+</pre>
 
-The project demonstrates how a tiny language can be designed, parsed, and executed using JavaScript. It also documents how AI was used to assist in designing grammar rules and an interpreter.
+<p>
+The project demonstrates how a tiny language can be designed, parsed, and executed using JavaScript.
+It also documents how AI was used to assist in designing grammar rules and an interpreter.
+</p>
 
-This project was developed as part of the SCO306 – Programming Languages AI Assignment.
+<p>
+This project was developed as part of the <b>SCO306 – Programming Languages AI Assignment</b>.
+</p>
 
-Features
+---
 
-MathLang supports:
+<h2 style="color:#00f2fe;">✨ Features</h2>
 
-Word-based arithmetic operations:
+<h3>Word-based arithmetic operations</h3>
+<ul>
+  <li>add</li>
+  <li>subtract</li>
+  <li>multiply</li>
+  <li>divide</li>
+</ul>
 
-add
+<h3>Numbers written as words</h3>
+<ul>
+  <li>zero to twenty</li>
+</ul>
 
-subtract
-
-multiply
-
-divide
-
-Numbers written as words (zero to twenty)
-
-Mixed input:
-
+<h3>Mixed input</h3>
+<pre>
 add 5 and four
+</pre>
 
-Error handling:
+<h3>Error handling</h3>
+<ul>
+  <li>Invalid numbers</li>
+  <li>Invalid operations</li>
+  <li>Division by zero</li>
+</ul>
 
-Invalid numbers
+---
 
-Invalid operations
+<h2 style="color:#38bdf8;">📂 Project Structure</h2>
 
-Project Structure
+<pre>
 /MathLang
 │
 ├── index.html          # Visual landing page
 ├── WordCalculator.js   # Main language interpreter
 └── README.md           # Project documentation
-How the Language Works
-Grammar (BNF Format)
+</pre>
 
-The AI generated the following grammar rules:
+---
 
-<expression> ::= <operation> <number> "and" <number>
-<operation> ::= "add" | "subtract" | "multiply" | "divide"
-<number> ::= "zero" | "one" | ... | "twenty"
+<h2 style="color:#a78bfa;">📐 Grammar (BNF)</h2>
 
+<pre>
+&lt;expression&gt; ::= &lt;operation&gt; &lt;number&gt; "and" &lt;number&gt;
+&lt;operation&gt; ::= "add" | "subtract" | "multiply" | "divide"
+&lt;number&gt; ::= "zero" | "one" | ... | "twenty"
+</pre>
 
-This means every valid MathLang command must follow:
-
-operation + number + "and" + number
-
-Example:
+<p>Example:</p>
+<pre>
 add four and five
-Part 1 – Basic Interpreter
+</pre>
 
-The first implementation uses simple string parsing and a lookup table:
+---
 
-execute("add five and four") // returns 9
+<h2 style="color:#facc15;">🧩 Part 1 – Basic Interpreter</h2>
 
+<pre>
+execute("add five and four"); // returns 9
+</pre>
 
-It works by:
+<p><b>How it works:</b></p>
+<ul>
+  <li>Splits the sentence into words</li>
+  <li>Maps word numbers to integers</li>
+  <li>Applies the arithmetic operation</li>
+</ul>
 
-Splitting the sentence into words.
+---
 
-Mapping word numbers to real numbers.
+<h2 style="color:#fb923c;">🤖 Part 2 – AI-Assisted Interpreter</h2>
 
-Applying the correct arithmetic operation.
-
-Part 2 – AI-Assisted Interpreter
-Part 2 – AI-Assisted Interpreter
-
-The second implementation uses a class-based design:
-
+<pre>
 const calculator = new WordCalculator();
 calculator.execute("add four and five"); // returns "nine"
+</pre>
 
+<ul>
+  <li>Converts numeric results back into words</li>
+  <li>Uses object mappings (wordToNum, numToWord)</li>
+  <li>Improved validation and error handling</li>
+</ul>
 
-This version:
+---
 
-Converts word results back into words.
+<h2 style="color:#4ade80;">▶️ Running the Project</h2>
 
-Uses object mappings (wordToNum, numToWord).
+<h3>In Browser</h3>
+<ol>
+  <li>Open index.html</li>
+  <li>Press F12</li>
+  <li>View console output</li>
+</ol>
 
-Handles errors more cleanly.
-Running the Project
-Option 1 – In Browser
-
-Open index.html
-
-Open browser console (F12)
-
-View output logs
-
-Option 2 – In Node.js
+<h3>In Node.js</h3>
+<pre>
 node WordCalculator.js
+</pre>
 
-Example Output
+---
+
+<h2 style="color:#22d3ee;">📊 Example Output</h2>
+
+<pre>
 /////////////// MATH LANG ////////////////
 add five and four = 9
 subtract five and four = 1
@@ -116,48 +152,54 @@ subtract four and five = one
 multiply four and five = twenty
 divide twenty and four = five
 divide four and zero = Cannot divide by zero
+</pre>
 
-What I Learned
+---
 
-Programming languages are based on grammar + interpretation.
+<h2 style="color:#c084fc;">🎓 What I Learned</h2>
 
-Even simple languages require:
+<ul>
+  <li>Programming languages are built on grammar and interpretation</li>
+  <li>Even simple languages require tokenization, parsing and semantics</li>
+  <li>AI is useful for idea generation but humans still design and debug</li>
+</ul>
 
-Tokenization
+---
 
-Parsing
+<h2 style="color:#f472b6;">🚀 Future Improvements</h2>
 
-Semantic rules
+<ul>
+  <li>Support larger numbers (thirty, forty, hundred)</li>
+  <li>Add expression chaining</li>
+  <li>Add real input field on webpage</li>
+  <li>Build a real parser</li>
+</ul>
 
-AI is useful for:
-
-Generating ideas
-
-Drafting logic
-But still requires human debugging and design decisions.
-Future Improvements
-
-Support larger numbers (e.g. thirty, forty, hundred).
-
-Add parentheses and chaining:
-
+<pre>
 add five and multiply three and two
+</pre>
 
+---
 
-Add a real input field on the webpage.
+<h2 style="color:#10b981;">📜 License</h2>
 
-Build a full parser instead of simple string splitting.
+<p>
+Educational use only.<br>
+Free to modify and extend.
+</p>
 
-License
+---
 
-This project is for educational purposes only.
-Free to use, modify, and extend.
+<h2 style="color:#60a5fa;">👤 Author</h2>
 
-Author
-
-SCO306 – Programming Languages
-AI Assisted Language Design Assignment
-@MousaCode
+<p>
+<b>SCO306 – Programming Languages</b><br>
+AI Assisted Language Design Assignment<br>
+<b>@MousaCode</b><br>
 2026
+</p>
 
-Division by zero
+<!-- ===================== FOOTER ===================== -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:4facfe,100:00f2fe&section=footer" />
+</p>
