@@ -190,6 +190,6 @@ Free to modify and extend.
 <p>
 <b>SCO306 – Programming Languages</b><br>
 AI Assisted Language Design Assignment<br>
-<a href="https:github.com/Pro-Mousa"><b>@MousaCode</b><br></a>
-2026
+<strong>@MousaCode</strong><br>
+<b><em>©2026</em></b>
 </p>
